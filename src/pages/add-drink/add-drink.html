@@ -1,0 +1,35 @@
+<!--
+  Generated template for the AddDrinkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Drink</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="drink.name" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>descricao</ion-label>
+    <ion-input [(ngModel)]="drink.descricao" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Imagem url</ion-label>
+    <ion-input [(ngModel)]="drink.drinkImagem" type="text"></ion-input>
+  </ion-item>
+
+  <button ion-button (click)="addDrink(drink)">Save</button>
+
+</ion-content>
